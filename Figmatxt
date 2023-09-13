@@ -1,0 +1,154 @@
+https://www.figma.com/file/yYo4z6iu0QqYgb5OxqHFhF/Blog-de-Gatos-%E2%80%A2-Desafio-Explorer-(Community)?type=design&node-id=0-190&mode=design&t=GpJ8TekLAmT32t3T-0
+
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-header: #065E7C;
+    --bg-footer: #387E96;
+    --fc-white: #ffffff;
+    --fc-title: #202024;
+    --fc-text: #121214;
+}
+
+body{
+    margin: 0 auto;
+    width: 43rem;
+
+}
+
+html, body, input{
+    font-family: 'Mulish', sans-serif;
+}
+header{
+    display: flex;
+    height: 7.2rem;
+    background-color: var(--bg-header);
+    padding: 1.6rem 2.8rem;
+    text-align: center;
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+header form{
+    flex: 1;
+}
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input{
+    width: 24rem;
+    padding: 1.0rem 1.6rem;
+    border-radius: .4rem;
+    border: none;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    opacity: .6;
+}
+
+.avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+main img{
+    border-radius: .5rem;
+}
+.question{
+    margin: 3.1rem 6.6rem 3.1rem 2.2rem;
+}
+.question h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--fc-title);
+    margin-bottom: .8rem;
+    padding: .4rem 0;
+}
+
+figcaption{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.text{
+    width: 382px;
+    margin-left: 2.2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--fc-text);
+    line-height: 160%
+
+
+}
+
+aside{
+    margin: 3.1rem 17rem 3.1rem 2.2rem;
+}
+
+aside h1{
+   margin-bottom: 3.2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+    color: var(--fc-title);
+}
+.item{
+    display: inline-flex;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.text-article h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:var(--fc-title);
+    margin-bottom: 1.5rem;
+    width: 16.6rem;
+}
+
+.text-article p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fc-text);
+    width: 21.5rem;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--bg-footer);
+    padding: 1.6rem;
+    color: var(--fc-white);
+
+}
+
+
+@media(min-width: 1120px){
+    body{
+        grid-template-areas:
+        "header header header" 
+        "main main aside"
+        "footer footer footer"
+    }
+
+}
